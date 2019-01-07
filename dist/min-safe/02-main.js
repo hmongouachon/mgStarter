@@ -1,22 +1,23 @@
+
 /////////////////////////////////////////////
 
-// home 
+// lab 
 
 /////////////////////////////////////////////
 
 // the semi-colon before function invocation is a safety net against concatenated
 // scripts and/or other plugins which may not be closed properly.
 ;(function ($) {
-    $.home = {
+    $.lab = {
 
         init : function() {
 
-            $.home.init_js();
+            $.lab.init_js();
         },
 
         init_js : function() {
 
-        	console.log('is home');
+        	console.log('is lab');
 
          
             // $.ajax({

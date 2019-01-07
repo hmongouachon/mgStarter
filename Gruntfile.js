@@ -10,10 +10,10 @@ module.exports = function(grunt) {
             app: {
                 files: {
                     // './dist/min-safe/00-plugins.js': ['./js/plugins.js'],
-                    './dist/min-safe/01-main.js': ['./js/00-config.js'],
+                    './dist/min-safe/00-main.js': ['./js/00-config.js'],
                     './dist/min-safe/01-main.js': ['./js/01-home.js'],
-                    './dist/min-safe/01-main.js': ['./js/02-lab.js'],
-        	        './dist/min-safe/01-main.js': ['./js/main.js'],
+                    './dist/min-safe/02-main.js': ['./js/02-lab.js'],
+        	        './dist/min-safe/03-main.js': ['./js/main.js'],
 
                 }
             }
@@ -34,31 +34,13 @@ module.exports = function(grunt) {
             },
             
         },
-        htmlmin: {                                     // Task
-            dist: {                                      // Target
-              options: {                                 // Target options
-                removeComments: true,
-                collapseWhitespace: true,
-                removeEmptyAttributes: true,
-                removeCommentsFromCDATA: true,
-                removeRedundantAttributes: true,
-                collapseBooleanAttributes: true,
-              },
-              files: {                                   // Dictionary of files
-                './index.php': './index-dev.php',     // 'destination': 'source'
-                // 'dist/contact.html': 'src/contact.html'
-              }
-            },
-        }
     });
 
     //load grunt tasks
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-ng-annotate'); 
-    grunt.loadNpmTasks('grunt-contrib-htmlmin');
-
     //register grunt default task
-    grunt.registerTask('default', ['ngAnnotate', 'concat', 'uglify', 'htmlmin']);
+    grunt.registerTask('default', ['ngAnnotate', 'concat', 'uglify', ]); 
 
 }
