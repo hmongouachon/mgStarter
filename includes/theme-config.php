@@ -462,27 +462,5 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 
 
 
-/*------------------------------------*\
-    Minify html output
-\*------------------------------------*/
-
-add_action('get_header', 'gkp_html_minify_start');
-function gkp_html_minify_start()  {
-    ob_start( 'gkp_html_minyfy_finish' );
-}
-
-function gkp_html_minyfy_finish( $html )  {
-
-   // Suppression des commentaires HTML, 
-   // sauf les commentaires conditionnels pour IE
-   $html = preg_replace('/<!--(?!s*(?:[if [^]]+]|!|>))(?:(?!-->).)*-->/s', '', $html);
-
-   // Suppression des espaces vides
-   $html = str_replace(array("rn", "r", "n", "t"), '', $html);
-   while ( stristr($html, '  ')) 
-       $html = str_replace('  ', ' ', $html);
-
-   return $html;
-}
 
 ?>

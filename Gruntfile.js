@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                 files: {
                     // './dist/min-safe/00-plugins.js': ['./js/plugins.js'],
                     './dist/min-safe/00-main.js': ['./js/00-config.js'],
-                    './dist/min-safe/01-main.js': ['./js/01-home.js'],
+                    './dist/min-safe/01-main.js': ['./js/01-home.js'], 
                     './dist/min-safe/02-main.js': ['./js/02-lab.js'],
         	        './dist/min-safe/03-main.js': ['./js/main.js'],
 

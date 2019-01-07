@@ -6,7 +6,7 @@ MgStarter is a custom improvement of the awesome [github.com/toddmotto/html5blan
 ## Getting Started
 
 * Install theme in wordpress
-* Install npm dependencies ( grunt, grunt-ng-annotate, grunt-contrib-concat, grunt-contrib-uglify)
+* Install npm dependencies ( grunt, grunt-ng-annotate, grunt-contrib-concat, grunt-contrib-uglify) 
 * Execute Compass compile to generate min css
 * Execute Grunt to generate min js files
 
