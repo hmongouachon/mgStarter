@@ -1,0 +1,116 @@
+
+
+/* -----------------------------
+   colors scheme
+-------------------------------*/
+
+/* colors shemes*/
+$black : #000000;
+
+
+/* -----------------------------
+   mixins
+-------------------------------*/
+
+
+
+/* border radius */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/*  transitions   */
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property...) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+    -moz-transition-timing-function:    $timing;
+    -o-transition-timing-function:      $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}
+
+/*  generic transform */
+@mixin transform($transforms) {
+     -moz-transform: $transforms;
+       -o-transform: $transforms;
+      -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+/*  rotate */
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+ 
+/*  scale */
+@mixin scale($scale) {
+   @include transform(scale($scale));
+} 
+
+/*  translate */
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
+/*  skew */
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+/*  transform origin */
+@mixin transform-origin ($x, $y) {
+    moz-transform-origin: $x, $y;
+       -o-transform-origin: $x, $y;
+      -ms-transform-origin: $x, $y;
+  -webkit-transform-origin: $x, $y;
+          transform-origin: $x, $y;
+}
+
+
+/* use it : @include transition(background-color 1s .5s, color 2s);  */
+
+
+
+
+
+
+/* -----------------------------
+   
+  transitions variables
+
+-------------------------------*/
+
+/* easing */
+/*$easing-1 : cubic-bezier(.62,.01,.16,1); 
+$easing-2 : cubic-bezier(.52,.01,.16,1); */
+
+/* ui elements */
+$duration-fast : 250ms; 
+$duration-medium : 600ms;
+$duration-slow : 1200ms;

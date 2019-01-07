@@ -1,0 +1,46 @@
+/* ----------------------------
+
+   Helpers 
+
+--------------------------- */
+
+
+.cover {background-position:center;  -moz-background-size:cover;-o-background-size:cover;-webkit-background-size:cover;background-size:cover;}
+.full-size { height : 100%; width : 100%; position: absolute; top : 0; left : 0;}
+
+button {
+  appearance: none;
+  background: transparent;
+  /* Other styles */
+}
+
+/* example using flex */
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  item {
+	flex: 0 0 120px;
+	height: 100px;
+  }
+}
+
+/* prevent long link break in parapgraph */
+p {
+	word-break: break-all;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* transparent gradient */
+.transparent-gradient {
+  background: linear-gradient(rgba(0, 0, 0,0), #d7e0ef), #527ee0;
+  /*Other styles*/
+}
+
+/* if using inline-block, set font-size : 0 to the parent to prevent extra space bug */
+/* useful css selector : :not(:last-child) ,  nth-child(0)  */
+
+ 

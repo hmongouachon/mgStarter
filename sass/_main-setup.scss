@@ -1,0 +1,80 @@
+/* ----------------------------
+
+   main 
+
+--------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+/* global box-sizing, selection, svg */
+*, *:after, *:before {-moz-box-sizing:border-box; box-sizing:border-box; -webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility;}
+::-webkit-selection { background: black; color: white; text-shadow: none; }
+::-moz-selection { background: black; color: white; text-shadow: none; }
+::selection { background: black; color: white; text-shadow: none; }
+svg:not(:root) { overflow: hidden; } /* IE9 hack svg */
+
+/* html element 62.5% font-size for REM use */
+html {
+  font-size:62.5%;
+}
+body {
+  font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color:#444;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+  max-width:100%;
+  vertical-align:bottom;
+   -ms-interpolation-mode: bicubic; /* IE7 hack scale img */
+}
+a {
+  color:#444;
+  text-decoration:none;
+}
+a:hover {
+  color:#444;
+}
+a:focus {
+  outline:0;
+}
+a:hover,
+a:active {
+  outline:0;
+}
+input:focus {
+  outline:0;
+  border:1px solid #04A4CC;
+}
+
+body, h1, h2, h3, h4, h5, h6, select, textarea, input, button, div, span, a {  }
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/*@font-face {
+  font-family:'Font-Name';
+  src:url('fonts/font-name.eot');
+  src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+    url('fonts/font-name.woff') format('woff'),
+    url('fonts/font-name.ttf') format('truetype'),
+    url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}*/

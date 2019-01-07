@@ -1,0 +1,67 @@
+/*
+  Theme Name: Mg starter
+  Theme URI: http://hmongouachon.com
+  Description: HTML5 Blank WordPress Theme
+  Version: 1.4.3
+  Author: hmongouachon
+  Author URI: http://hmongouachon.com
+  Tags: Blank, HTML5, CSS3, Animejs, smoothstates, lazyload, jquery3x, isvisible
+
+  License: MIT
+  License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+@import "compass";
+
+/*  compass variables > color, mixins, duration   */
+@import "compass-vars";
+
+/*  main setup : typographies and elements rules   */
+@import "main-setup";
+
+/*  helpers   */
+@import "helpers";
+
+/*  structure : header, footer, nav, wrapper   */
+@import "structure";
+
+/*  wordpress core   */
+@import "wordpress-core";
+
+
+
+
+
+
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+     only screen and (min-resolution:144dpi) {
+
+}
+
+
+
+
+

@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){home=$("#home"),lab=$("#lab"),home.length&&$.home.init(),lab.length&&$.lab.init(),[].forEach.call($$("*"),function(a){a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16)})});
